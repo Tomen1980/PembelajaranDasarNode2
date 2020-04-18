@@ -69,8 +69,8 @@ const app = express();
 // app.use(logger);
 
 // Handlebars Middleware
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
+app.engine('hbs', exphbs({ defaultLayout: 'main.hbs' }));
+app.set('view engine', 'hbs');
 
 // Body Parser Middleware
 app.use(express.json());
